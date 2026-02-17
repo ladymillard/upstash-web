@@ -40,6 +40,19 @@ export default function NewNavigation() {
         <NavigationMenu.Link
           asChild
           className={cx(
+            "flex select-none items-center gap-0.5 rounded-full px-3 py-2",
+            "text-text-mute hover:bg-white/5 hover:text-primary-text",
+            "code-inventory" === segment ? "bg-bg-mute text-primary-text" : "",
+          )}
+        >
+          <Link href="/code-inventory">Code Inventory</Link>
+        </NavigationMenu.Link>
+      </NavigationMenu.Item>
+
+      <NavigationMenu.Item>
+        <NavigationMenu.Link
+          asChild
+          className={cx(
             "flex select-none items-center gap-0.5 rounded-full px-4 py-2",
             "text-text-mute hover:bg-white/5 hover:text-primary-text",
             "customers" === segment ? "bg-bg-mute text-primary-text" : "",

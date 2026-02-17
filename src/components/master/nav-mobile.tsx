@@ -87,6 +87,10 @@ const NavItems: {
     href: "/pricing",
   },
   {
+    name: "Code Inventory",
+    href: "/code-inventory",
+  },
+  {
     name: "Customers",
     href: "/customers",
   },
